@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/Favicon.png" type="image/x-icon" />
+    <title>Matemática Descontraída</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="conteudo">
+      <div class="container-nome">
+        <p class="insira-nome">Insira seu nome: 👇</p>
+        <input type="text" id="user-name" required />
+      </div>
+
+      <div class="quiz-container">
+        <div class="quiz-page" id="page-1">
+          <div class="fundo-p">
+            <p>Adição: <span>245 + 67 =</span></p>
+          </div>
+          <input type="number" id="addition-answer" required />
+          <button class="next-btn">Próximo</button>
+        </div>
+
+        <div class="quiz-page" id="page-2">
+          <div class="fundo-p">
+            <p>Subtração: <span>538 - 433 =</span></p>
+          </div>
+          <input type="number" id="subtraction-answer" required />
+          <button class="next-btn">Próximo</button>
+        </div>
+
+        <div class="quiz-page" id="page-3">
+          <div class="fundo-p">
+            <p>Multiplicação: <span>864 × 2 =</span></p>
+          </div>
+          <input type="number" id="multiplication-answer" required />
+          <button class="next-btn">Próximo</button>
+        </div>
+
+        <div class="quiz-page" id="page-4">
+          <div class="fundo-p">
+            <p>Divisão: <span>864 ÷ 2 =</span></p>
+          </div>
+          <input type="number" id="division-answer" required />
+          <button class="submit-btn">Enviar</button>
+        </div>
+
+        <div id="result"></div>
+        <button id="voltar">Voltar</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  </body>
+</html>
